@@ -5,9 +5,9 @@ pipeline {
         stage('Terraform Init') {
             steps {
                 // Initialize Terraform and set up the backend
-                    sh 'terraform init -migrate-state'
-                    sh 'terraform init -reconfigure'
-                   // sh 'terraform init'
+                    // sh 'terraform init -migrate-state'
+                   // sh 'terraform init -reconfigure'
+                   sh 'terraform init'
             }
         }
         
