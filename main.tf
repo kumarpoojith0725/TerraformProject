@@ -89,7 +89,7 @@ resource "aws_instance" "web" {
                apt-get install -y nginx
                mkdir -p /tmp/git
                cd /tmp/git
-               git clone https://github.com/askkrishnaprasad/TerraformProject.git
+               git clone https://github.com/kumarpoojith0725/TerraformProject.git
                cp TerraformProject/index.nginx-debian.html /var/www/html/index.nginx-debian.html
                cp TerraformProject/index.nginx-debian.html /var/www/html/index.html
                systemctl start nginx
