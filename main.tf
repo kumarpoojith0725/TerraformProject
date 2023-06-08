@@ -84,7 +84,7 @@ resource "aws_security_group" "allow_web" {
 
 # Define the EC2 instance that will run NGINX
 resource "aws_instance" "web" {
-  ami                         = "ami-024e6efaf93d85776"
+  ami                         = "ami-0989fb15ce71ba39e"
   instance_type               = "t3.micro"
   subnet_id                   = aws_subnet.main.id
   associate_public_ip_address = true
