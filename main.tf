@@ -13,6 +13,15 @@ provider "aws" {
 #  }
 # }
 
+ Central State File
+ terraform {
+  backend "s3" {
+    bucket = "terraform-project-new"
+    key    = "terraform.tfstate"
+    region = "eu-north-1"
+  }
+ }
+
 # Define the VPC
 resource "aws_vpc" "main" {
   cidr_block = "10.0.0.0/16"
