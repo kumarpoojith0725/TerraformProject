@@ -21,7 +21,7 @@ pipeline {
         stage('Wait') {
             steps {
                 //Wait for some time (120 seconds)
-                sh 'sleep 600'
+                sh 'sleep 120'
             }
         }
         
